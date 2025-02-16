@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header {
+    background-color: black; /* Green background */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.5rem; /* Larger font for logo */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    color: white;
+    text-align: center;
+    padding: 100px 20px; /* Top and bottom padding */
+}
+
+.cta-button {
+    background-color: #FFC107; /* Yellow button */
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Services Section */
+#services {
+    padding: 20px;
+}
+
+.service {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Margin for vertical spacing */
+    }
+
+    .hero {
+        padding: 50px 10px; /* Less padding for mobile */
+    }
+
+    .cta-button {
+        padding: 8px 15px; /* Smaller button for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.2rem; /* Smaller logo font */
+    }
+
+    .hero h1 {
+        font-size: 2rem; /* Smaller heading */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Smaller paragraph */
+    }
+}
